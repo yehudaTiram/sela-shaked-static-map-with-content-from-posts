@@ -91,13 +91,13 @@ class Static_Map_With_Content_From_Posts_Public {
 		<?php 
 		if( have_rows('projects') ):
 			while ( have_rows('projects') ) : the_row();
-				echo '<a style="top:'. get_sub_field("pin_position_top") . '%;left:' . get_sub_field("pin_position_left") . '%;" href="#" class="map-tack-icon" alt="Load related posts" data-post_id="' . get_sub_field("post_id") . '" id="' . get_sub_field("post_id") . '"></a>';
+				echo '<a style="top:'. get_sub_field("pin_position_top") . '%;left:' . get_sub_field("pin_position_left") . '%;" href="#" class="map-tack-icon trigger" data-post_id="' . get_sub_field("post_id") . '" id="' . get_sub_field("post_id") . '"  title="Tooltips Are Fun!"><div style="display:none;" class="map-tack-icon-tooltip">' . get_sub_field("project_name") . '<br />' . get_sub_field("location")  . '<br />' . get_sub_field("units_quantity") . '</div></a>';
 			endwhile;
 		else :
-			// no rows found
+			// no rows found 
 		endif;
 		?>			
-		
+	
 		<div class="map-and-posts-spinner"></div>
 		<!--<div id="portfolio-posts-container"></div>-->
 		<?php 

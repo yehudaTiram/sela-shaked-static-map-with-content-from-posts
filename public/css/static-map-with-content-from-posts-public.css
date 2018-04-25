@@ -44,12 +44,38 @@ margin: 5px 5px 0;
     position: absolute;
     display: block;
 }
-/* a#map-and-posts-post-loader-btn-1 { */
-    /* top: 17%; */
-    /* left: 58%; */
-/* } */
-/* a#map-and-posts-post-loader-btn-2 { */
-    /* top: 49%; */
-    /* left: 52%; */
-/* } */
 
+.map-tack-icon-tooltip {
+
+    left: 50px;
+    top: -10px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: normal;
+    text-transform: none;
+    font-family: Verdana;
+    /* font-size: 12px; */
+    opacity: 1;
+-moz-transform: scale(0.9);
+-webkit-transform: scale(0.9);
+-o-transform: scale(0.9);
+-ms-transform: scale(0.9);
+transform: scale(0.9);
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    box-shadow: rgb(85, 85, 85) 2px 2px 7px;
+	
+  background:linear-gradient(rgb(228, 221, 152), #fdf88b);
+  color: #6d6e71;
+  padding: 8px;
+  position: absolute;
+  z-Index: 999;
+  display: none;
+}

@@ -40,11 +40,44 @@
 
 				ourRequest.send();
 			});					
-		});	
-		
+		});
+
+		  $('.trigger').click(function () {
+			$(this).children().fadeIn(500);
+			$(".trigger").not($(this)).children().fadeOut(500);
+			$(this).unbind('mouseleave');
+		  });		
+		$('.trigger').hover(
+			function () {
+			$(this).children().fadeIn(500);
+			$(".trigger").not($(this)).children().fadeOut(500);
+		}, function () {
+			$(this).children().fadeOut(500);
+		});
 
 	});	
-	
+
+
+$(function () {
+  //$('.trigger').myTooltip();
+});
+
+$.fn.myTooltip = function () {
+  
+  var $this = $(this),
+      $tooltip = $this.find('.map-tack-icon-tooltip');
+  
+  $this.mouseenter(function () {
+    //$('.map-tack-icon-tooltip').fadeIn(500);
+	$this.children().fadeIn(500);
+  }).mouseleave(function () {
+    $('.map-tack-icon-tooltip').stop(true, true).fadeOut(500);
+  }); 
+  
+  $tooltip.click(function () {
+    $('.map-tack-icon-tooltip').stop(true, true).fadeOut(500);
+  });
+};	
 })( jQuery );
 
 
