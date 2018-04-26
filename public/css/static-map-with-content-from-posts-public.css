@@ -1,17 +1,11 @@
-/* .map-and-posts-map-div{ */
-    /* background-image: url(/wp-content/plugins/static-map-with-content-from-posts/public/images/map-1.jpg); */
-    /* width: 800px; */
-    /* height: 886px;	 */
-/* } */
-/* .map-and-posts-point-on-map { */
-    /* height: 1%; */
-    /* width: 1%; */
-    /* background: red; */
-    /* z-index: 2; */
-    /* position: relative; */
-    /* top: 1%; */
-    /* left: 3% */
-/* } */
+#map_and_posts_map figure{
+    padding: 0;
+    margin: 0;	
+}
+#map_and_posts_map_bg_image{ 
+    height: 100%;
+    width: 100%;
+}
 .map-and-posts-spinner {
 background: url('/wp-content/plugins/static-map-with-content-from-posts/public/images/loading.gif') no-repeat;
 background-size: 64px 64px;
@@ -37,13 +31,13 @@ margin: 5px 5px 0;
     height: auto;
     width: 100%;
 }
-.map-tack-icon{
-    height: 64px;
-    width: 64px;
-    background: url(/wp-content/plugins/static-map-with-content-from-posts/public/images/map-tack-icon-red.png) no-repeat;
-    position: absolute;
-    display: block;
-}
+/* .map-tack-icon{ */
+    /* height: 64px; */
+    /* width: 64px; */
+    /* background: url(/wp-content/plugins/static-map-with-content-from-posts/public/images/map-tack-icon-red.png) no-repeat; */
+    /* position: absolute; */
+    /* display: block; */
+/* } */
 
 .map-tack-icon-tooltip {
 
@@ -54,7 +48,7 @@ margin: 5px 5px 0;
     border-radius: 5px;
     line-height: normal;
     text-transform: none;
-    font-family: Verdana;
+    font-family: oealchemistpro, Arial, Helvetica, sans-serif;
     /* font-size: 12px; */
     opacity: 1;
 -moz-transform: scale(0.9);
