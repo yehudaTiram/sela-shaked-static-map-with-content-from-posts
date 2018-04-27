@@ -76,7 +76,7 @@ class Static_Map_With_Content_From_Posts_Public {
 		<?php 
 		if( have_rows('projects') ):
 			while ( have_rows('projects') ) : the_row();
-				echo '<image class="map-tack-icon trigger" id="' . get_sub_field("post_id") . '" xlink:href="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-tack-icon-red.png" x="' . get_sub_field("pin_position_left") . '" y="'. get_sub_field("pin_position_top") . '" height="6" width="6" />';
+				echo '<image class="map-tack-icon trigger" id="' . get_sub_field("post_id") . '" xlink:href="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-tack-icon-red.png" x="' . get_sub_field("pin_position_left") . '" y="'. get_sub_field("pin_position_top") . '" height="6" width="6" data-project_name="' . get_sub_field("project_name") . '" data-location="' . get_sub_field("location") . '" data-units_quantity="' . get_sub_field("units_quantity") . '" />';
 			endwhile;
 		else :
 			// no rows found 
@@ -86,6 +86,10 @@ class Static_Map_With_Content_From_Posts_Public {
 		
 	</svg>
   </figure>
+ <div id="mypopup">
+  <h3>Popup title</h3>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div> 
 		<!--<a href="#" class="map-tack-icon" alt="Load related posts" data-post_id="1547" id="map-and-posts-post-loader-btn-1"></a>
 		<a href="#" class="map-tack-icon" alt="Load related posts" data-post_id="1551" id="map-and-posts-post-loader-btn-2"></a>-->
 		<?php 

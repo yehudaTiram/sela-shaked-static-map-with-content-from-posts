@@ -39,6 +39,26 @@ margin: 5px 5px 0;
     /* display: block; */
 /* } */
 
+#mypopup {
+  padding: 10px;
+  /* font-family: Arial, sans-serif; */
+  /* font-size: 10pt; */
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  display: none;
+}
+
+#mypopup::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  background-color: white;
+  position: absolute;
+  left: -6px;
+  top: 68px;
+}
 .map-tack-icon-tooltip {
 
     left: 50px;
