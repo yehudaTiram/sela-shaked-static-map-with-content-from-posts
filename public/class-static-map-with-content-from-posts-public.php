@@ -69,14 +69,16 @@ class Static_Map_With_Content_From_Posts_Public {
 		?>	
 		<!--<img class="map-and-posts-map-img" src="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-1.svg" />-->
   <figure class="align-center">
-    <svg  height="100%" width="100%" id="image-map" class="image-map" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" xml:space="preserve" class="eatwell-plate">
-		<image  height="100%" width="100%" id="map_and_posts_map_bg_image" xlink:href="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-1.svg" x="0" y="0"  preserveAspectRatio="none" />
+	<svg  height="100%" width="100%" id="image-map" class="image-map" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" xml:space="preserve">
+		<image xlink:href="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-1.svg" height="100%" width="100%"  id="map_and_posts_map_bg_image" x="0" y="0" preserveAspectRatio="none" />
+    <!--<svg  height="100%" width="100%" id="image-map" class="image-map" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" xml:space="preserve">
+		<image width="100%" id="map_and_posts_map_bg_image" xlink:href="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-1.svg" x="0" y="0"  preserveAspectRatio="none" />-->
 <!--		<image id="1551" xlink:href="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-tack-icon-red.png" x="380" y="150" height="48px" width="48px" />
 		<image id="1547" xlink:href="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-tack-icon-red.png" x="350" y="250" height="48px" width="48px" />-->
 		<?php 
 		if( have_rows('projects') ):
 			while ( have_rows('projects') ) : the_row();
-				echo '<image class="map-tack-icon trigger" id="' . get_sub_field("post_id") . '" xlink:href="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-tack-icon-red.png" x="' . get_sub_field("pin_position_left") . '" y="'. get_sub_field("pin_position_top") . '" height="6" width="6" data-project_name="' . get_sub_field("project_name") . '" data-location="' . get_sub_field("location") . '" data-units_quantity="' . get_sub_field("units_quantity") . '" />';
+				echo '<image class="map-tack-icon trigger" id="' . get_sub_field("post_id") . '" xlink:href="http://selashaked.co.il/wp-content/plugins/static-map-with-content-from-posts/public/images/map-tack-icon-red.png" x="' . get_sub_field("pin_position_left") . '" y="'. get_sub_field("pin_position_top") . '" height="4" width="4" data-project_name="' . get_sub_field("project_name") . '" data-location="' . get_sub_field("location") . '" data-units_quantity="' . get_sub_field("units_quantity") . '" />';
 			endwhile;
 		else :
 			// no rows found 

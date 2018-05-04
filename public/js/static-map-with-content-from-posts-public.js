@@ -29,7 +29,8 @@
 					ourHTMLString += data.content.rendered;
 					map_and_postsPostsContainer.innerHTML = ourHTMLString;					
 					/* Regenerate image carousel Avada */
-					generateCarousel();					
+					generateCarousel();	
+				
 				} else {
 					console.log("We connected to the server, but it returned an error.");
 				}
@@ -112,6 +113,8 @@
 			});					
 		});
 
+// jQuery('#image-map').height(jQuery('#map_and_posts_post_wrapper').height());
+// jQuery('#map_and_posts_map_bg_image').height(jQuery('#map_and_posts_post_wrapper').height());	
 
 
 	});	
